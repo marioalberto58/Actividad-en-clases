@@ -1,0 +1,22 @@
+Algoritmo Litrosporkilometro
+	Definir lt, km, consumo Como Real
+	Escribir "Ingrese el combustible en litros cargado en la estación"
+	Leer lt
+	Escribir "Ingrese los kilometros recorridos"
+	Leer km
+	consumo=lt/km
+	Escribir "El consumo de litros de combustible por kilometro recorrido es ",consumo
+FinAlgoritmo
+
+
+Algoritmo Intercambiarvalores
+	Definir a, b, c como real
+	Leer a, b
+	Imprimir "El valor inicial a es ", a
+	Imprimir "El valor inicial b es ", b
+	c=a
+	a=b
+	b=c
+	Imprimir "El valor final a es ", a
+	Imprimir "El valor final b es ", b
+FinAlgoritmo
