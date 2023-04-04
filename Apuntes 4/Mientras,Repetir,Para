@@ -1,0 +1,49 @@
+Funcion opcionCiclo <- FuncionOpcionNoPosible( opcionCiclo )
+	Mientras opcionCiclo<1 o opcionCiclo>3 Hacer
+		Escribir "El numero que ingreso es ajeno a las opciones dadas."
+		Escribir "Escoja un ciclo repetitivo. 1=Mientras, 2=Repetir, 3=Para"
+		Leer opcionCiclo
+	FinMientras
+Fin Funcion
+
+Funcion sumatoriaPara <- FuncionSumatoriaPara( numerosSumatoria )
+	Para indice = 1 Hasta numerosSumatoria Con Paso 1 Hacer
+		sumatoriaPara = sumatoriaPara + indice
+	FinPara
+Fin Funcion
+
+Funcion sumatoriaRepetir <- FuncionSumatoriaRepetir( numerosSumatoria )
+	indice = 0
+	Repetir
+		indice = indice + 1
+		sumatoriaRepetir = sumatoriaRepetir + indice
+	Hasta Que indice = numerosSumatoria
+Fin Funcion
+
+Funcion sumatoriaMientras <- FuncionSumatoriaMientras( numerosSumatoria )
+	indice = 0
+	Mientras indice <= numerosSumatoria Hacer
+		sumatoriaMientras = sumatoriaMientras + indice
+		indice = indice + 1
+	FinMientras
+Fin Funcion
+
+Algoritmo ProgramaSumatoria
+	Definir opcionCiclo, numerosSumatoria Como Entero
+	Escribir "Ingrese la cantidad total de numeros para la sumatoria"
+	Leer numerosSumatoria
+	Escribir "Escoja un ciclo repetitivo. 1=Mientras, 2=Repetir, 3=Para"
+	Leer opcionCiclo
+	
+	opcionCiclo <- FuncionOpcionNoPosible( opcionCiclo )
+	
+	Segun opcionCiclo Hacer
+		1: 
+			Imprimir FuncionSumatoriaMientras( numerosSumatoria )
+		2: 
+			Imprimir FuncionSumatoriaRepetir( numerosSumatoria )
+		3: 
+			Imprimir FuncionSumatoriaPara( numerosSumatoria )
+	FinSegun
+	
+FinAlgoritmo
