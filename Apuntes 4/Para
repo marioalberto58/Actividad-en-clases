@@ -1,0 +1,11 @@
+Algoritmo TablaMultiplicar
+	Definir numeroTabla, cantidadExpresiones Como Entero
+	Escribir "Ingrese un numero para ver su tabla."
+	Leer numeroTabla
+	Escribir "Ingrese la cantidad de expresiones que desea por tabla."
+	Leer cantidadExpresiones
+	Para indice=1 Hasta cantidadExpresiones Con Paso 1 Hacer
+		numeroMultiplicado = numeroTabla*indice
+		Imprimir numeroTabla, "*", indice, "=", numeroMultiplicado
+	Fin Para
+FinAlgoritmo
